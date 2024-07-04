@@ -82,6 +82,7 @@ h1, h2 {
 .subt {
     text-align: center;
     font-size: 32px;
+    font-family: 'Granaina-limpia';
 }
 
 /* Estilos de la suscripción */
@@ -198,6 +199,16 @@ footer h4 {
     background-color: #947744 !important;
 }
 
+/* Estilos del carrusel */
+.carousel-inner img {
+    max-height: 500px; /* Ajusta la altura según sea necesario */
+    object-fit: cover;
+}
+.text-center.my-5 p {
+    font-size: 1.5rem; /* Tamaño de letra grande para los párrafos */
+}
+
+
 /* Ajustes para móviles */
 @media (max-width: 768px) {
     nav {
@@ -222,9 +233,17 @@ footer h4 {
     p {
         font-size: 1rem; /* Ajuste de tamaño de fuente para móviles */
         margin-bottom: 1rem; /* Ajuste de margen inferior */
+        text-align: center; /* Centrar el texto en móviles */
+    }
+
+    .carousel-inner img {
+        max-height: 300px; /* Ajusta para pantallas más pequeñas */
+    }
+    .text-center.my-5 p {
+        font-size: 1rem; /* Tamaño de letra grande para los párrafos */
     }
 }
-
+    
 /* Ajustes para tablets */
 @media (max-width: 992px) and (min-width: 769px) {
     nav {
