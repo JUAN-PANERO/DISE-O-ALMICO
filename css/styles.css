@@ -203,11 +203,28 @@ footer h4 {
 .carousel-inner img {
     max-height: 500px; /* Ajusta la altura según sea necesario */
     object-fit: cover;
+    transition: none; /* Evitar zoom en imágenes al pasar el mouse */
 }
 .text-center.my-5 p {
     font-size: 1.5rem; /* Tamaño de letra grande para los párrafos */
 }
 
+/* Estilos del carrusel */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    transition: none; /* Evitar zoom en imágenes al pasar el mouse */
+}
+
+/* Ajustar imagen del producto 4 porta velas */
+#carouselProducto4 .carousel-item img {
+    object-fit: cover; /* Ajusta la imagen sin distorsionar */
+}
+
+/* Estilos de productos */
+article {
+    margin-bottom: 40px;
+}
 
 /* Ajustes para móviles */
 @media (max-width: 768px) {
@@ -238,6 +255,7 @@ footer h4 {
 
     .carousel-inner img {
         max-height: 300px; /* Ajusta para pantallas más pequeñas */
+        transition: none; /* Evitar zoom en imágenes al pasar el mouse */
     }
     .text-center.my-5 p {
         font-size: 1rem; /* Tamaño de letra grande para los párrafos */
@@ -262,3 +280,123 @@ footer h4 {
         margin: 10px auto;
     }
 }
+
+/* Evitar zoom en imágenes al pasar el mouse */
+.carousel-item img {
+    transition: none !important; /* Desactiva la transición de zoom */
+    transform: none !important;  /* Desactiva cualquier transformación de zoom */
+}
+
+/* Ajustar imagen del producto 4 porta velas a 16:9 */
+#carouselProducto4 .carousel-item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+}
+
+#carouselProducto4 .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin distorsionar */
+}
+
+
+/*Blog*/ 
+/*Blog*/ 
+.blog-post {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.blog-post h4 {
+    margin-bottom: 16px;
+}
+
+.blog-post img {
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño máximo */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.blog-post p {
+    font-size: 18px;
+    width: 100%;
+    max-width: 800px; /* Limita el ancho del texto */
+    text-align: left; /* Alinea el texto a la izquierda para una mejor lectura */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 12px;
+    }
+    
+    .blog-post img {
+        max-width: 100%;
+    }
+    
+    .blog-post p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-post {
+        padding: 8px;
+    }
+    
+    .blog-post img {
+        max-width: 100%;
+    }
+    
+    .blog-post p {
+        font-size: 14px;
+    }
+}
+
+/* Estilo del botón redondo con fondo blanco y letra naranja/marrón */
+.btn.btn-primary {
+    background-color: white; /* Fondo blanco */
+    color: #ff4500; /* Letra naranja tirando a marrón */
+    border: 2px solid #ff4500; /* Borde del color de la letra */
+    border-radius: 50%; /* Botón redondo */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: all 0.3s ease; /* Transición suave para la animación */
+}
+
+/* Animación al pasar el mouse */
+.btn.btn-primary:hover {
+    background-color: #ff4500; /* Fondo naranja */
+    color: white; /* Letra blanca */
+    transform: scale(1.1); /* Aumenta el tamaño */
+    border: 2px solid #ff4500;
+}
+
+/* Definición de una animación simple */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicación de la animación a un elemento */
+  .blog-post {
+    animation: slideIn 1.5s ease-out;
+  }
