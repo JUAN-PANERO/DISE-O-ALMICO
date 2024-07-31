@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'fonts';
+body {
+    background-color: $bg-color;
+    margin: 0;
+    padding: 0;
+    font-family: 'Granaina-limpia', sans-serif;
+}
+
+.logo {
+    max-width: 300px;
+    border-radius: 20%;
+}
+
+.subt {
+    color: $primary-color;
+}

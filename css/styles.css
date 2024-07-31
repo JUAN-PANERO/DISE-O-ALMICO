@@ -1,402 +1,311 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Granaina-limpia";
+  src: url("../font/Granaina-limpia.ttf.woff") format("woff"), url("../font/Granaina-limpia.ttf.svg") format("svg"), url("../font/Granaina-limpia.ttf.eot"), url("../font/Granaina-limpia.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Granaina-limpia", sans-serif;
+}
+
 /* Estilos globales */
+@font-face {
+  font-family: "Granaina-limpia";
+  src: url("../font/Granaina-limpia.ttf.woff") format("woff"), url("../font/Granaina-limpia.ttf.svg") format("svg"), url("../font/Granaina-limpia.ttf.eot"), url("../font/Granaina-limpia.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Granaina-limpia", sans-serif;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'Granaina-limpia';
-    src: url('../font/Granaina-limpia.ttf.woff') format('woff'),
-         url('../font/Granaina-limpia.ttf.svg') format('svg'),
-         url('../font/Granaina-limpia.ttf.eot'),
-         url('../font/Granaina-limpia.ttf.eot?#iefix') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Granaina-limpia";
+  src: url("../font/Granaina-limpia.ttf.woff") format("woff"), url("../font/Granaina-limpia.ttf.svg") format("svg"), url("../font/Granaina-limpia.ttf.eot"), url("../font/Granaina-limpia.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Granaina-limpia", sans-serif;
 }
 
 body {
-    font-family: 'Granaina-limpia', sans-serif;
-    background-color: #DECA9F;
-    margin: 0;
-    padding: 0;
+  background-color: #DECA9F;
+  margin: 0;
+  padding: 0;
+  font-family: "Granaina-limpia", sans-serif;
 }
 
 .logo {
-    max-width: 300px;
-    border-radius: 20%;
-}
-
-/* Estilos del encabezado */
-.header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #DECA9F;
-}
-
-.header h1 {
-    font-size: 2.5em;
-    color: #ff7f50;
-    margin: 0;
-}
-
-.header p {
-    font-size: 1.2em;
-    color: #666;
-    margin: 10px 0 0;
-}
-
-/* Estilos de la navegación */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #947744;
-    border-bottom: 1px solid #947744;
-    padding: 10px 0;
-    box-shadow: 0 4px 2px -2px #947744;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #ff4500;
-    color: #fff;
-}
-
-h1, h2 {
-    font-family: 'Granaina-limpia';
-    max-width: 800px;
-    padding: 20px;
-    margin: 0 auto;
-    color: #73561F;
+  max-width: 300px;
+  border-radius: 20%;
 }
 
 .subt {
-    text-align: center;
-    font-size: 32px;
-    font-family: 'Granaina-limpia';
+  color: #ff7f50;
 }
 
-/* Estilos de la suscripción */
-.subscribe {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #ff9800;
-    padding: 10px;
-    border-radius: 5px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+.header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #DECA9F;
 }
 
-.subscribe:hover {
-    background-color: #ff7f50;
+.header h1 {
+  font-size: 2.5em;
+  color: #ff7f50;
+  margin: 0;
+}
+
+.header p {
+  font-size: 1.2em;
+  color: #666;
+  margin: 10px 0 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #947744;
+  border-bottom: 1px solid #947744;
+  padding: 10px 0;
+  box-shadow: 0 4px 2px -2px #947744;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ff7f50;
+  color: #fff;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-/* Estilos del contenido */
 .content {
-    max-width: 600px;
-    padding: 20px;
+  max-width: 600px;
+  padding: 20px;
 }
 
-/* Estilos adicionales para la sección de contenido */
 .content h2 {
-    font-size: 2em;
-    color: #ff7f50;
-    margin-bottom: 20px;
+  font-size: 2em;
+  color: #ff7f50;
+  margin-bottom: 20px;
 }
 
 .content p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #333;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
 }
 
 .content .button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #ff7f50;
-    border: 2px solid #ff7f50;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #ff7f50;
+  border: 2px solid #ff7f50;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .content .button:hover {
-    background-color: #ff7f50;
-    color: #fff;
+  background-color: #ff7f50;
+  color: #fff;
 }
 
-.image {
-    padding: 20px;
-    border-radius: 15px;
+/*Blog*/
+.blog-post {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
 }
 
-.image img {
-    border-radius: 15px;
-    max-width: 100%;
-    height: auto;
-    border: 5px solid #ff7f50;
+.blog-post h4 {
+  margin-bottom: 16px;
+}
+
+.blog-post img {
+  width: 100%;
+  max-width: 800px; /* Ajusta el tamaño máximo */
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.blog-post p {
+  font-size: 18px;
+  width: 100%;
+  max-width: 800px; /* Limita el ancho del texto */
+  text-align: left; /* Alinea el texto a la izquierda para una mejor lectura */
+}
+
+/*TIENDA*/
+.carousel {
+  max-width: 600px; /* Ajusta el ancho máximo del carousel */
+  margin: auto; /* Centra el carousel en su contenedor */
+}
+
+.carousel-item img {
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#carouselProducto4 .carousel-item {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Ancho máximo para el contenedor */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga del contenedor */
+  object-fit: contain;
 }
 
 footer {
-    margin: 0 auto;
-    padding: 20px;
-    color: white;
-    background-color: #C08C42;
-    text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  background-color: #C08C42;
+  text-align: center;
 }
 
 footer h4 {
-    margin: 5px 0;
-}
-
-/* Formulario */
-.formulario {
-    width: 500px;
-    text-align: center;
-    margin: 10px auto;
-    padding-bottom: 10px;
-}
-
-/* Sección comentarios */
-.comments-section {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.comments-section p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* Estilo personalizado para el fondo del nav */
-.bg-custom {
-    background-color: #947744 !important;
-}
-
-/* Estilos del carrusel */
-.carousel-inner img {
-    max-height: 500px; /* Ajusta la altura según sea necesario */
-    object-fit: cover;
-    transition: none; /* Evitar zoom en imágenes al pasar el mouse */
-}
-.text-center.my-5 p {
-    font-size: 1.5rem; /* Tamaño de letra grande para los párrafos */
-}
-
-/* Estilos del carrusel */
-.carousel-item img {
-    width: 100%;
-    height: auto;
-    transition: none; /* Evitar zoom en imágenes al pasar el mouse */
-}
-
-/* Ajustar imagen del producto 4 porta velas */
-#carouselProducto4 .carousel-item img {
-    object-fit: cover; /* Ajusta la imagen sin distorsionar */
-}
-
-/* Estilos de productos */
-article {
-    margin-bottom: 40px;
+  margin: 5px 0;
 }
 
 /* Ajustes para móviles */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
-    
-    .nav-item {
-        text-align: center;
-        margin: 5px 0;
-    }
-
-    .subscribe {
-        position: static;
-        margin: 10px auto;
-    }
-
-    .subt {
-        font-size: 2rem; /* Ajuste de tamaño de fuente para móviles */
-        margin-bottom: 1rem; /* Ajuste de margen inferior */
-    }
-
-    p {
-        font-size: 1rem; /* Ajuste de tamaño de fuente para móviles */
-        margin-bottom: 1rem; /* Ajuste de margen inferior */
-        text-align: center; /* Centrar el texto en móviles */
-    }
-
-    .carousel-inner img {
-        max-height: 300px; /* Ajusta para pantallas más pequeñas */
-        transition: none; /* Evitar zoom en imágenes al pasar el mouse */
-    }
-    .text-center.my-5 p {
-        font-size: 1rem; /* Tamaño de letra grande para los párrafos */
-    }
+  nav {
+    flex-direction: column;
+  }
+  .nav-item {
+    text-align: center;
+    margin: 5px 0;
+  }
+  .subscribe {
+    position: static;
+    margin: 10px auto;
+  }
+  .subt {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .carousel-inner img {
+    max-height: 300px;
+    transition: none;
+  }
+  .text-center.my-5 p {
+    font-size: 1rem;
+  }
+  .blog-post {
+    padding: 12px;
+  }
+  .blog-post img {
+    max-width: 100%;
+  }
+  .blog-post p {
+    font-size: 16px;
+  }
 }
-    
 /* Ajustes para tablets */
 @media (max-width: 992px) and (min-width: 769px) {
-    nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .nav-item {
-        flex: 1 1 50%;
-        text-align: center;
-        margin: 5px 0;
-    }
-
-    .subscribe {
-        position: static;
-        margin: 10px auto;
-    }
-}
-
-/* Evitar zoom en imágenes al pasar el mouse */
-.carousel-item img {
-    transition: none !important; /* Desactiva la transición de zoom */
-    transform: none !important;  /* Desactiva cualquier transformación de zoom */
-}
-
-/* Ajustar imagen del producto 4 porta velas a 16:9 */
-#carouselProducto4 .carousel-item {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-}
-
-#carouselProducto4 .carousel-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta la imagen sin distorsionar */
-}
-
-
-/*Blog*/ 
-/*Blog*/ 
-.blog-post {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 16px;
-    background-color: #f9f9f9;
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .nav-item {
+    flex: 1 1 50%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centra el contenido horizontalmente */
+    margin: 5px 0;
+  }
+  .subscribe {
+    position: static;
+    margin: 10px auto;
+  }
 }
-
-.blog-post h4 {
-    margin-bottom: 16px;
-}
-
-.blog-post img {
-    width: 100%;
-    max-width: 800px; /* Ajusta el tamaño máximo */
-    height: auto;
-    margin: 0 auto;
-    display: block;
-}
-
-.blog-post p {
-    font-size: 18px;
-    width: 100%;
-    max-width: 800px; /* Limita el ancho del texto */
-    text-align: left; /* Alinea el texto a la izquierda para una mejor lectura */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .blog-post {
-        padding: 12px;
-    }
-    
-    .blog-post img {
-        max-width: 100%;
-    }
-    
-    .blog-post p {
-        font-size: 16px;
-    }
-}
-
+/* Ajustes para móviles pequeños */
 @media (max-width: 480px) {
-    .blog-post {
-        padding: 8px;
-    }
-    
-    .blog-post img {
-        max-width: 100%;
-    }
-    
-    .blog-post p {
-        font-size: 14px;
-    }
-}
-
-/* Estilo del botón redondo con fondo blanco y letra naranja/marrón */
-.btn.btn-primary {
-    background-color: white; /* Fondo blanco */
-    color: #ff4500; /* Letra naranja tirando a marrón */
-    border: 2px solid #ff4500; /* Borde del color de la letra */
-    border-radius: 50%; /* Botón redondo */
-    padding: 10px 20px; /* Espaciado interno */
-    transition: all 0.3s ease; /* Transición suave para la animación */
-}
-
-/* Animación al pasar el mouse */
-.btn.btn-primary:hover {
-    background-color: #ff4500; /* Fondo naranja */
-    color: white; /* Letra blanca */
-    transform: scale(1.1); /* Aumenta el tamaño */
-    border: 2px solid #ff4500;
-}
-
-/* Definición de una animación simple */
-@keyframes slideIn {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Aplicación de la animación a un elemento */
   .blog-post {
-    animation: slideIn 1.5s ease-out;
+    padding: 8px;
   }
+  .blog-post img {
+    max-width: 100%;
+  }
+  .blog-post p {
+    font-size: 14px;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Aplicación de la animación a un elemento */
+.blog-post {
+  animation: slideIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.img-fluid.rounded-circle {
+  animation: fadeIn 3s ease-in-out forwards;
+}
+
+.btn.btn-primary {
+  background-color: white; /* Fondo blanco */
+  color: #ff4500; /* Letra naranja tirando a marrón */
+  border: 2px solid #ff4500; /* Borde del color de la letra */
+  border-radius: 50%; /* Botón redondo */
+  padding: 10px 20px; /* Espaciado interno */
+  transition: all 0.3s ease; /* Transición suave para la animación */
+}
+.btn.btn-primary:hover {
+  background-color: #ff4500; /* Fondo naranja */
+  color: white; /* Letra blanca */
+  transform: scale(1.1); /* Aumenta el tamaño */
+  border: 2px solid #ff4500;
+}
+
+/*# sourceMappingURL=styles.css.map */

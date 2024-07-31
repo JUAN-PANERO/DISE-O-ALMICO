@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Granaina-limpia';
+    src: url('../font/Granaina-limpia.ttf.woff') format('woff'),
+         url('../font/Granaina-limpia.ttf.svg') format('svg'),
+         url('../font/Granaina-limpia.ttf.eot'),
+         url('../font/Granaina-limpia.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Granaina-limpia', sans-serif;
+}

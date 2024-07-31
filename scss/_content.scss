@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 2em;
+    color: $primary-color;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.content .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.content .button:hover {
+    background-color: $primary-color;
+    color: #fff;
+}
+
+/*Blog*/ 
+.blog-post {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.blog-post h4 {
+    margin-bottom: 16px;
+}
+
+.blog-post img {
+    width: 100%;
+    max-width: 800px; /* Ajusta el tamaño máximo */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.blog-post p {
+    font-size: 18px;
+    width: 100%;
+    max-width: 800px; /* Limita el ancho del texto */
+    text-align: left; /* Alinea el texto a la izquierda para una mejor lectura */
+}
+
+/*TIENDA*/
+
+.carousel {
+    max-width: 600px; /* Ajusta el ancho máximo del carousel */
+    margin: auto; /* Centra el carousel en su contenedor */
+}
+
+.carousel-item img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#carouselProducto4 .carousel-item {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ancho máximo para el contenedor */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga del contenedor */
+    object-fit: contain; 
+}

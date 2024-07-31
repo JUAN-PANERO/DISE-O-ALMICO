@@ -1,0 +1,83 @@
+/* Ajustes para móviles */
+@import 'variables';
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    .nav-item {
+      text-align: center;
+      margin: 5px 0;
+    }
+  
+    .subscribe {
+      position: static;
+      margin: 10px auto;
+    }
+  
+    .subt {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  
+    .carousel-inner img {
+      max-height: 300px;
+      transition: none;
+    }
+  
+    .text-center.my-5 p {
+      font-size: 1rem;
+    }
+  
+    .blog-post {
+      padding: 12px;
+    }
+  
+    .blog-post img {
+      max-width: 100%;
+    }
+  
+    .blog-post p {
+      font-size: 16px;
+    }
+  }
+  
+  /* Ajustes para tablets */
+  @media (max-width: 992px) and (min-width: 769px) {
+    nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    .nav-item {
+      flex: 1 1 50%;
+      text-align: center;
+      margin: 5px 0;
+    }
+  
+    .subscribe {
+      position: static;
+      margin: 10px auto;
+    }
+  }
+  
+  /* Ajustes para móviles pequeños */
+  @media (max-width: 480px) {
+    .blog-post {
+      padding: 8px;
+    }
+  
+    .blog-post img {
+      max-width: 100%;
+    }
+  
+    .blog-post p {
+      font-size: 14px;
+    }
+  }
